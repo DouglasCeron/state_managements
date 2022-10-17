@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:state_managements/screens/Products_bloc.dart';
+import 'package:state_managements/screens/product_bloc.dart';
 
 class ProductListScreen extends StatelessWidget {
   ProductListScreen({Key? key}) : super(key: key);
@@ -21,7 +21,6 @@ class ProductListScreen extends StatelessWidget {
         body: StreamBuilder(
           stream: productsBloc.fetchProducts,
           builder: (_, AsyncSnapshot<List<String>> snapshot) {
-            print(snapshot.data);
             final products = snapshot.data ?? [];
             return ListView.builder(
               itemCount: products.length,
