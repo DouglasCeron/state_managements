@@ -4,7 +4,7 @@ import 'package:state_managements/screens/Products_bloc.dart';
 class ListStream extends StatelessWidget {
   ListStream({Key? key}) : super(key: key);
 
-  ProductsBloc productsBloc = ProductsBloc();
+  final ProductsBloc productsBloc = ProductsBloc();
 
   @override
   Widget build(BuildContext context) {
