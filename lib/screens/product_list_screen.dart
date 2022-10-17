@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:state_managements/screens/Products_bloc.dart';
 
-class ListStream extends StatelessWidget {
-  ListStream({Key? key}) : super(key: key);
+class ProductListScreen extends StatelessWidget {
+  ProductListScreen({Key? key}) : super(key: key);
 
   final ProductsBloc productsBloc = ProductsBloc();
 
