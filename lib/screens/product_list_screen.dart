@@ -21,6 +21,7 @@ class ProductListScreen extends StatelessWidget {
         body: StreamBuilder(
           stream: productsBloc.fetchProducts,
           builder: (_, AsyncSnapshot<List<String>> snapshot) {
+            print(snapshot.data);
             final products = snapshot.data ?? [];
             return ListView.builder(
               itemCount: products.length,

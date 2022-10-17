@@ -4,13 +4,13 @@ class ProductsBloc {
   List productList = ['MicroFone', 'Caixa-som', 'Teclado', 'Camera'];
 
   Stream<List<String>> get fetchProducts async* {
-    List<String> productList = [];
+    List<String> auxList = [];
     for (var value in productList) {
       await Future.delayed(
         const Duration(seconds: 2),
       );
-      productList.add(value);
-      yield productList;
+      auxList.add(value);
+      yield auxList;
     }
   }
 
